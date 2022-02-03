@@ -4,13 +4,15 @@ import com.google.gson.JsonObject;
 import com.weeryan17.mixer.shared.command.meta.ClientType;
 import com.weeryan17.mixer.shared.command.meta.CommandData;
 
+import java.util.Optional;
+
 public class IdentifyProperties implements CommandData {
 
     private String name;
     private ClientType type;
     private String id;
 
-    private JsonObject other;
+    private Optional<JsonObject> other = Optional.empty();
 
     public IdentifyProperties(String name, ClientType type, String id) {
         this.name = name;
@@ -22,7 +24,7 @@ public class IdentifyProperties implements CommandData {
         this.name = name;
         this.type = type;
         this.id = id;
-        this.other = other;
+        this.other = Optional.of(other);
     }
 
     public String getName() {
@@ -49,11 +51,11 @@ public class IdentifyProperties implements CommandData {
         this.id = id;
     }
 
-    public JsonObject getOther() {
+    public Optional<JsonObject> getOther() {
         return other;
     }
 
-    public void setOther(JsonObject other) {
+    public void setOther(Optional<JsonObject> other) {
         this.other = other;
     }
 }
