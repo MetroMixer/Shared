@@ -1,4 +1,4 @@
-package com.weeryan17.mixer.shared.models;
+package org.metromixer.shared.models;
 
 public class ChannelInfo {
 

@@ -1,7 +1,7 @@
-package com.weeryan17.mixer.shared.command.data;
+package org.metromixer.shared.command.data;
 
-import com.weeryan17.mixer.shared.command.meta.CommandData;
-import com.weeryan17.mixer.shared.models.Version;
+import org.metromixer.shared.command.meta.CommandData;
+import org.metromixer.shared.models.Version;
 
 public class VersionProperties implements CommandData {
 

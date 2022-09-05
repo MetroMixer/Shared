@@ -1,11 +1,12 @@
-package com.weeryan17.mixer.shared.command.meta;
+package org.metromixer.shared.command.meta;
 
-import com.weeryan17.mixer.shared.command.data.CreateChannels;
-import com.weeryan17.mixer.shared.command.data.DeleteChannels;
-import com.weeryan17.mixer.shared.command.data.IdentifyProperties;
-import com.weeryan17.mixer.shared.command.data.Init;
-import com.weeryan17.mixer.shared.command.data.Invalid;
-import com.weeryan17.mixer.shared.command.data.VersionProperties;
+import org.metromixer.shared.command.data.CreateChannels;
+import org.metromixer.shared.command.data.DeleteChannels;
+import org.metromixer.shared.command.data.IdentifyProperties;
+import org.metromixer.shared.command.data.Init;
+import org.metromixer.shared.command.data.Invalid;
+import org.metromixer.shared.command.data.VersionProperties;
+import org.metromixer.shared.command.data.Volume;
 
 import java.util.Arrays;
 import java.util.Locale;
@@ -17,7 +18,8 @@ public enum CommandType {
     DELETE_CHANNELS(DeleteChannels.class),
     IDENTIFY(IdentifyProperties.class),
     VERSION(VersionProperties.class),
-    INVALID(Invalid.class);
+    INVALID(Invalid.class),
+    VOLUME(Volume.class);
 
     private String command;
     private Class<? extends CommandData> javaClass;

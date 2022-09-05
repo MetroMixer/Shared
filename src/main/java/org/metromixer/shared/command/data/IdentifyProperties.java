@@ -1,8 +1,8 @@
-package com.weeryan17.mixer.shared.command.data;
+package org.metromixer.shared.command.data;
 
 import com.google.gson.JsonObject;
-import com.weeryan17.mixer.shared.command.meta.ClientType;
-import com.weeryan17.mixer.shared.command.meta.CommandData;
+import org.metromixer.shared.command.meta.ClientType;
+import org.metromixer.shared.command.meta.CommandData;
 
 import java.util.Optional;
 

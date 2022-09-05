@@ -1,9 +1,8 @@
-package com.weeryan17.mixer.shared.command.data;
+package org.metromixer.shared.command.data;
 
-import com.weeryan17.mixer.shared.command.meta.CommandData;
-import com.weeryan17.mixer.shared.models.ChannelInfo;
+import org.metromixer.shared.command.meta.CommandData;
+import org.metromixer.shared.models.ChannelInfo;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CreateChannels implements CommandData {

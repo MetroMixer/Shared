@@ -1,4 +1,4 @@
-package com.weeryan17.mixer.shared.command.meta;
+package org.metromixer.shared.command.meta;
 
 public enum ClientType {
 
